@@ -9,6 +9,7 @@ import java.io.IOException;
 import java.net.URL;
 
 public class Utilities {
+
     public static class TryResult<T> {
         public final boolean successful;
         public T value;
@@ -61,4 +62,5 @@ public class Utilities {
             ImageIO.write(image, "png", getFile);
         } catch (IOException ignored) {}
     }
+
 }

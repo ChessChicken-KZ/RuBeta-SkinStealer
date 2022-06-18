@@ -5,6 +5,7 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 
 public class PanelPicture extends JPanel {
+
     private final boolean skinMode;
     private BufferedImage image;
 
@@ -17,8 +18,6 @@ public class PanelPicture extends JPanel {
         this.revalidate();
         this.repaint();
     }
-
-
 
     @Override
     protected void paintComponent(Graphics g) {
