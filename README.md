@@ -1,5 +1,7 @@
 # RuBeta-SkinStealer
 
+**[Скачать можно здесь.](https://github.com/ChessChicken-KZ/RuBeta-SkinStealer/releases/tag/0.3)**
+
 Простая, но в большинстве случаев пригодная программа для того, чтобы скачать скины и плащи других игроков.
 
 Лицензия [MIT](https://github.com/ChessChicken-KZ/RuBeta-SkinStealer/blob/master/LICENSE), так что Вы можете взять код/проект для своих нужд (если они конечно есть).
