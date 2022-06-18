@@ -1,0 +1,7 @@
+
+#Intellij IDEA
+.idea/
+RuBeta-SkinStealer.iml
+
+# Maven
+target/
