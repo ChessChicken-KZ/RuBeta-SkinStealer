@@ -1,5 +1,5 @@
-# rubeta-skinstealer
+# RuBeta-SkinStealer
 
-Old small project, that let you download 64x32 skin from https://rubeta.net
+Простая, но в большинстве случаев пригодная программа для того, чтобы скачать скины и плащи других игроков.
 
-You can freedomly take, change, fork this code!
+Лицензия MIT, так что Вы можете взять код/проект для своих нужд (если они конечно есть).
