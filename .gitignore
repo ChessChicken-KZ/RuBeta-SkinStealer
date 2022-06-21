@@ -2,6 +2,7 @@
 #Intellij IDEA
 .idea/
 RuBeta-SkinStealer.iml
+lib/
 
 # Maven
 target/
