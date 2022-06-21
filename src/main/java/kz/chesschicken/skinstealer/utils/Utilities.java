@@ -1,5 +1,8 @@
 package kz.chesschicken.skinstealer.utils;
 
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import javax.swing.filechooser.FileNameExtensionFilter;
@@ -20,7 +23,7 @@ public class Utilities {
         }
     }
 
-    public static TryResult<BufferedImage> downloadImage(String string_url, boolean scream) {
+    public static @NotNull TryResult<@Nullable BufferedImage> downloadImage(@NotNull String string_url, boolean scream) {
         try {
             URL url = new URL(string_url);
             BufferedImage image = ImageIO.read(url);
@@ -33,7 +36,7 @@ public class Utilities {
     }
 
     @SuppressWarnings("ConstantConditions")
-    public static BufferedImage readNoException(String a) {
+    public static @Nullable BufferedImage readNoException(@NotNull String a) {
         try {
             return ImageIO.read(Utilities.class.getResourceAsStream(a));
         } catch (IOException e) {
@@ -41,7 +44,7 @@ public class Utilities {
         }
     }
 
-    public static File operationSave(JFrame home, String defname, boolean skin) {
+    public static @Nullable File operationSave(@NotNull JFrame home, @NotNull String defname, boolean skin) {
         JFileChooser fileChooser = new JFileChooser();
         fileChooser.setDialogTitle("Сохранить " + (skin ? "Скин" : "Плащ") + " игрока " + defname + ".");
         fileChooser.setSelectedFile(new File(defname + ".png"));
@@ -54,7 +57,7 @@ public class Utilities {
         return null;
     }
 
-    public static void commitSaveOperation(JFrame home, boolean skin, String username, BufferedImage image) {
+    public static void commitSaveOperation(@NotNull JFrame home, boolean skin, @NotNull String username, @NotNull BufferedImage image) {
         File getFile = operationSave(home, username, skin);
         if(getFile == null)
             return;

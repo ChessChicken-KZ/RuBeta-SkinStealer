@@ -10,7 +10,7 @@ public class Main {
         try {
             UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
         } catch (ClassNotFoundException | UnsupportedLookAndFeelException | IllegalAccessException | InstantiationException e) {
-            e.printStackTrace();
+            System.out.println("Could not find system look and feel, using standard one.");
         }
 
         JFrame frame = new JFrame();

@@ -1,5 +1,7 @@
 package kz.chesschicken.skinstealer.utils;
 
+import org.jetbrains.annotations.NotNull;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.image.BufferedImage;
@@ -13,7 +15,7 @@ public class PanelPicture extends JPanel {
         this.skinMode = a;
     }
 
-    public void setImage(BufferedImage image) {
+    public void setImage(@NotNull BufferedImage image) {
         this.image = image;
         this.revalidate();
         this.repaint();
